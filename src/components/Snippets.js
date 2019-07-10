@@ -20,7 +20,7 @@ function Snippets({ textContent }) {
   );
 }
 
-Snippets.proptypes = {
+Snippets.propTypes = {
   textContent: PropTypes.string
 };
 
