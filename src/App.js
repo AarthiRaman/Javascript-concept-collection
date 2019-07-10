@@ -7,7 +7,7 @@ import "./styles.css";
 function App() {
   return (
     <div className="App">
-      <h1>Javascript Exercises and Examples</h1>
+      <h1>Javascript Concepts and Examples</h1>
       <ExcerciseList
         listOfExcercises={[
           {

@@ -2,20 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-const DefinitionHeading = styled.h3`
-  margin: 45px 0 0px;
-  text-align: left;
-`;
-
 const DefinitionContent = styled.p`
-  margin: 0px 0 15px;
+  margin: 10px 0 15px;
   text-align: left;
+  font-weight: 500;
 `;
 
-function Definition({ title, textContent }) {
+function Definition({ title, textContent, notes }) {
   return (
     <div>
-      <DefinitionHeading>{title}</DefinitionHeading>;
       <DefinitionContent>{textContent}</DefinitionContent>;
     </div>
   );

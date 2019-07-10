@@ -9,7 +9,8 @@ import { goToTopic, goToIndex } from "../actions/index";
 
 const SubText = styled.h1`
   font-size: 1.5em;
-  text-align: center;
+  text-align: left;
+  padding 0 20px; 
   color: palevioletred;
 `;
 
@@ -28,8 +29,7 @@ function ExerciseList({
   dispatchGoToIndex,
   i18n
 }) {
-  console.log(i18n);
-  console.log(currentTopic);
+  const listOfTopics = Object.keys(i18n);
 
   return (
     <div>
@@ -39,11 +39,11 @@ function ExerciseList({
 
       {isIndex && (
         <div className="ExerciseList">
-          <SubText>Click to load the exercise below</SubText>
+          <SubText>Contents</SubText>
           <ul>
-            {listOfExcercises.map(obj => (
-              <OptionsList onClick={() => dispatchGoToTopic(obj.componentObj)}>
-                {obj.name}
+            {listOfTopics.map(topics => (
+              <OptionsList onClick={() => dispatchGoToTopic(i18n[topics])}>
+                {i18n[topics][0].text}
               </OptionsList>
             ))}
           </ul>
@@ -51,7 +51,7 @@ function ExerciseList({
       )}
 
       {!isIndex && currentTopic && (
-        <ExcerciseContainer textContent={i18n[currentTopic]} />
+        <ExcerciseContainer textContent={currentTopic} />
       )}
     </div>
   );

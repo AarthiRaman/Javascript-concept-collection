@@ -1,6 +1,7 @@
 export default [
   {
     type: "heading",
+    order: 3,
     text: "Closures in Javascript"
   },
   {
@@ -53,7 +54,7 @@ export default [
   },
   {
     type: "referenceLinks",
-    links: [
+    text: [
       {
         href:
           "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures",

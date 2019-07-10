@@ -12,12 +12,12 @@ const ReferenceSectionsList = styled.li`
   text-align: left;
 `;
 
-function ReferenceSections({ referenceLinks }) {
+function ReferenceSections({ textContent }) {
   return (
     <ReferenceSectionsContainer>
       <h3> Useful Links </h3>
       <ul>
-        {referenceLinks.map(link => (
+        {textContent.map(link => (
           <ReferenceSectionsList>
             <a href={link.href}>{link.text}</a>
           </ReferenceSectionsList>
