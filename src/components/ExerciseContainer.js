@@ -3,22 +3,23 @@ import PropTypes from "prop-types";
 
 import Snippets from "../components/Snippets";
 import Definition from "../components/Definition";
+import ReferenceSections from "../components/ReferenceSections";
 
 function ExcerciseContainer({ textContent }) {
+  const { snippet, title, definition, referenceLinks } = textContent;
   return (
     <div className="excerciseContainer">
-      <Definition
-        title={textContent.title}
-        textContent={textContent.definition}
-      />
+      <Definition title={title} textContent={definition} />
 
-      {textContent.snippet &&
-        textContent.snippet.map(snippet => <Snippets textContent={snippet} />)}
+      {snippet &&
+        snippet.map(snippetPiece => <Snippets textContent={snippetPiece} />)}
+
+      {referenceLinks && <ReferenceSections referenceLinks={referenceLinks} />}
     </div>
   );
 }
 
-ExcerciseContainer.proptypes = {
+ExcerciseContainer.propTypes = {
   children: PropTypes.node
 };
 

@@ -25,6 +25,7 @@ function ExerciseList({
   listOfExcercises,
   currentTopic,
   dispatchGoToTopic,
+  dispatchGoToIndex,
   i18n
 }) {
   console.log(i18n);
@@ -32,6 +33,10 @@ function ExerciseList({
 
   return (
     <div>
+      {!isIndex && (
+        <button onClick={() => dispatchGoToIndex()}>Back to Index</button>
+      )}
+
       {isIndex && (
         <div className="ExerciseList">
           <SubText>Click to load the exercise below</SubText>
