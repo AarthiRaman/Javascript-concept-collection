@@ -32,6 +32,10 @@ export default [
           "Understanding Javascript Function Executions — Call Stack, Event Loop , Tasks & more",
         href:
           "https://medium.com/@gaurav.pandvia/understanding-javascript-function-executions-tasks-event-loop-call-stack-more-part-1-5683dea1f5ec"
+      },
+      {
+        href: "https://glebbahmutov.com/blog/javascript-stack-size/",
+        text: "JavaScript stack size | Better world by better software"
       }
     ]
   }

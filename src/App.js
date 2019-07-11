@@ -8,18 +8,7 @@ function App() {
   return (
     <div className="App">
       <h1>Javascript Concepts and Examples</h1>
-      <ExcerciseList
-        listOfExcercises={[
-          {
-            name: "Closures",
-            componentObj: "Closure"
-          },
-          {
-            name: "React Pure Components",
-            componentObj: "PureComponent"
-          }
-        ]}
-      />
+      <ExcerciseList />
     </div>
   );
 }
