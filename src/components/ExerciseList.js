@@ -29,7 +29,8 @@ function ExerciseList({
   dispatchGoToIndex,
   i18n
 }) {
-  const listOfTopics = Object.keys(i18n);
+  const listOfTopicsJS = Object.keys(i18n.js);
+  const listOfTopicsReact = Object.keys(i18n.react);
 
   return (
     <div>
@@ -40,10 +41,24 @@ function ExerciseList({
       {isIndex && (
         <div className="ExerciseList">
           <SubText>Contents</SubText>
+          <h4>Javascript</h4>
           <ul>
-            {listOfTopics.map(topics => (
-              <OptionsList onClick={() => dispatchGoToTopic(i18n[topics])}>
-                {i18n[topics][0].text}
+            {listOfTopicsJS.map(topicName => (
+              <OptionsList
+                onClick={() => dispatchGoToTopic(i18n.js[topicName])}
+              >
+                {i18n.js[topicName][0].text}
+              </OptionsList>
+            ))}
+          </ul>
+
+          <h4>React</h4>
+          <ul>
+            {listOfTopicsReact.map(topicName => (
+              <OptionsList
+                onClick={() => dispatchGoToTopic(i18n.react[topicName])}
+              >
+                {i18n.react[topicName][0].text}
               </OptionsList>
             ))}
           </ul>

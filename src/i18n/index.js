@@ -4,8 +4,12 @@ import constructorsText from "./constructors";
 import eventLoop from "./eventLoop";
 
 export default {
-  Closure: closureText,
-  Constructors: constructorsText,
-  PureComponent: pureComponentText,
-  EventLoop: eventLoop
+  js: {
+    Closure: closureText,
+    Constructors: constructorsText,
+    EventLoop: eventLoop
+  },
+  react: {
+    PureComponent: pureComponentText
+  }
 };

@@ -24,21 +24,6 @@ function ExcerciseContainer({ textContent }) {
       })}
     </div>
   );
-  // const { snippet, title, definition, referenceLinks, notes } = textContent;
-  // return (
-  //   <div className="excerciseContainer">
-  //     <Definition
-  //       notes={notes}
-  //       title={textContent[0].text}
-  //       textContent={definition}
-  //     />
-
-  //     {snippet &&
-  //       snippet.map(snippetPiece => <Snippets textContent={snippetPiece} />)}
-
-  //     {referenceLinks && <ReferenceSections referenceLinks={referenceLinks} />}
-  //   </div>
-  // );
 }
 
 ExcerciseContainer.propTypes = {
