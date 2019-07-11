@@ -5,7 +5,7 @@ import styled from "styled-components";
 const DefinitionHeading = styled.h3`
   margin: 45px 0 0px;
   text-align: left;
-  font-size: ${props => `${props.order / 0.25}em`};
+  font-size: ${props => `${props.order / 0.15}em`};
 `;
 
 const Heading = ({ order, textContent, notes }) => (

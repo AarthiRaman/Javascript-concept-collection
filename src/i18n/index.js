@@ -5,11 +5,13 @@ import eventLoop from "./eventLoop";
 
 export default {
   js: {
+    heading: "Javascript",
     Closure: closureText,
     Constructors: constructorsText,
     EventLoop: eventLoop
   },
   react: {
+    heading: "ReactJS",
     PureComponent: pureComponentText
   }
 };
