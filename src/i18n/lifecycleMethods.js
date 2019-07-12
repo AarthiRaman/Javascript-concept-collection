@@ -10,22 +10,41 @@ export default [
       "special methods on the component class to run some code when a component mounts and unmounts and during various other lifecycle stages"
   },
   {
-    type: "text",
-    text: [
-      "List of lifecycle methods - on mounting before render",
-      "constructor",
-      "getDerivedStateFromProps",
-      "render"
-    ]
+    type: "heading",
+    order: 2,
+    text: "On Mounting"
   },
   {
     type: "text",
     text: [
-      "List of lifecycle methods - on mounting before render",
-      "constructor",
-      "getDerivedStateFromProps",
-      "render"
+      "Constructor",
+      "Used only once during the components life",
+      "Used oto initialize the props and state"
     ]
+  },
+  {
+    type: "gist",
+    id: "7d3f59ee5a070b2125cefa8da4e18f4d"
+  },
+  {
+    type: "text",
+    text: [
+      "static getDerivedStateFromProps",
+      "Used when the state is dependent on props",
+      "Used oto initialize the props and state"
+    ]
+  },
+  {
+    type: "text",
+    text: ["On Update", "constructor", "getDerivedStateFromProps", "render"]
+  },
+  {
+    type: "text",
+    text: ["On UnMount", "componentWillUnMount"]
+  },
+  {
+    type: "text",
+    text: ["Deprercated Methods", "componentWillUnMount"]
   },
   {
     type: "snippet",
