@@ -2,6 +2,7 @@ import closureText from "./closure";
 import pureComponentText from "./pureComponent";
 import constructorsText from "./constructors";
 import eventLoop from "./eventLoop";
+import lifeCycleMethods from "./lifecycleMethods";
 
 export default {
   js: {
@@ -12,6 +13,7 @@ export default {
   },
   react: {
     heading: "ReactJS",
-    PureComponent: pureComponentText
+    PureComponent: pureComponentText,
+    lifeCycleMethods
   }
 };

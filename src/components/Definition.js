@@ -16,7 +16,7 @@ function Definition({ title, textContent, notes }) {
   );
 }
 
-Definition.proptypes = {
+Definition.propTypes = {
   textContent: PropTypes.string
 };
 

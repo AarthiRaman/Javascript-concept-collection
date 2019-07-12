@@ -12,7 +12,7 @@ const Heading = ({ order, textContent, notes }) => (
   <DefinitionHeading>{textContent}</DefinitionHeading>
 );
 
-Heading.proptypes = {
+Heading.propTypes = {
   textContent: PropTypes.string
 };
 
