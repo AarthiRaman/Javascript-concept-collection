@@ -1,3 +1,4 @@
+// Incomplete
 export default [
   {
     type: "heading",
@@ -31,59 +32,54 @@ export default [
     text: [
       "static getDerivedStateFromProps",
       "Used when the state is dependent on props",
-      "Used oto initialize the props and state"
+      "Replaces componentWillReceiveProps (which has now become UNSAFE_componentWillReceiveProps",
+      "Returns the changed state when the previous and next states are compared and then componentDidUpdate is called to update the newState"
     ]
   },
   {
-    type: "text",
-    text: ["On Update", "constructor", "getDerivedStateFromProps", "render"]
+    type: "gist",
+    id: "e6690782006044584356c5c1eabb75a6"
   },
   {
     type: "text",
-    text: ["On UnMount", "componentWillUnMount"]
+    text: ["render", "It returns the JSX of your actual component. "]
+  },
+  {
+    type: "gist",
+    id: "b3cfab897e8f22d0d1f4e84c3f40fef3"
   },
   {
     type: "text",
-    text: ["Deprercated Methods", "componentWillUnMount"]
+    text: [
+      "componentDidMount",
+      "we’ve rendered our component for the first time, this method is called.",
+      "Method to do all the setup you couldn’t do without a DOM, and start getting all the data you need."
+    ]
   },
   {
-    type: "snippet",
-    text: `
-    function init() { 
-      var name = 'Mozilla'; // name is a local variable created by init function 
-      displayName() { // displayName() is the inner function, a closure 
-         alert(name); // use variable declared in the parent function 
-      } 
-      displayName(); 
-    } 
-    init();`
+    type: "gist",
+    id: "5506913d2f1c37414ae1918a633de609"
   },
   {
-    type: "snippet",
-    text: `
-    var counter = (function() { 
-      var privateCounter = 0; 
-      function changeBy(val) { 
-        privateCounter += val; } 
-        return { 
-           increment: function() { 
-             changeBy(1); 
-            }, 
-            decrement: function() { 
-             changeBy(-1); 
-            }, 
-            value: function() { 
-             return privateCounter;
-            } 
-           };
-         })(); 
-        console.log(counter.value()); // logs 0
-        counter.increment();
-        counter.increment();
-        console.log(counter.value()); // logs 2 
-        counter.decrement();
-        console.log(counter.value()); // logs 1
-    `
+    type: "heading",
+    order: 2,
+    text: "On Update"
+  },
+  {
+    type: "text",
+    text: ["getDerivedStateFromProps"]
+  },
+  {
+    type: "text",
+    text: [
+      "shouldComponentUpdate",
+      "Triggers before the re rendering starts",
+      "Takes the next state and next props as the arguments and returns a boolean to state if the component should be rendered."
+    ]
+  },
+  {
+    type: "gist",
+    id: "f9499c4bca1a09e581f8b23368bc84d1"
   },
   {
     type: "referenceLinks",

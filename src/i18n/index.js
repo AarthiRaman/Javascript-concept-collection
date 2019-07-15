@@ -3,17 +3,19 @@ import pureComponentText from "./pureComponent";
 import constructorsText from "./constructors";
 import eventLoop from "./eventLoop";
 import lifeCycleMethods from "./lifecycleMethods";
+import liftingState from "./liftingState";
 
 export default {
   js: {
     heading: "Javascript",
-    Closure: closureText,
-    Constructors: constructorsText,
-    EventLoop: eventLoop
+    closureText,
+    constructorsText,
+    eventLoop
   },
   react: {
     heading: "ReactJS",
-    PureComponent: pureComponentText,
+    liftingState,
+    pureComponentText,
     lifeCycleMethods
   }
 };

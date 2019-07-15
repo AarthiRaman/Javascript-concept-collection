@@ -31,7 +31,7 @@ function ExcerciseContainer({ textContent }) {
         const Component = itemMap[item.type];
 
         if (item.type === "gist") {
-          return <Gist id="7d3f59ee5a070b2125cefa8da4e18f4d" />;
+          return <Gist id={item.id} />;
         }
         return Component && <Component textContent={item.text} />;
       })}
