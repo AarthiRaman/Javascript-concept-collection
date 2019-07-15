@@ -4,6 +4,7 @@ import constructorsText from "./constructors";
 import eventLoop from "./eventLoop";
 import lifeCycleMethods from "./lifecycleMethods";
 import liftingState from "./liftingState";
+import statefulStateless from "./statefulStateless";
 
 export default {
   js: {
@@ -16,6 +17,7 @@ export default {
     heading: "ReactJS",
     liftingState,
     pureComponentText,
-    lifeCycleMethods
+    lifeCycleMethods,
+    statefulStateless
   }
 };

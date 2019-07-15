@@ -82,6 +82,29 @@ export default [
     id: "f9499c4bca1a09e581f8b23368bc84d1"
   },
   {
+    type: "text",
+    text: [
+      "getSnapshotBeforeUpdate",
+      "Enables your component to capture info from your DOM before it changes"
+    ]
+  },
+  {
+    type: "gist",
+    id: "516156649c3cc8e90a72d2c28ca7b553"
+  },
+  {
+    type: "heading",
+    order: 2,
+    text: "Unmounting"
+  },
+  {
+    type: "text",
+    text: [
+      "componentWillUnmount",
+      "Can be used to clean up anything to do that solely involves the component in question"
+    ]
+  },
+  {
     type: "referenceLinks",
     text: [
       {
